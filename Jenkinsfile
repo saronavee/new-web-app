@@ -12,7 +12,7 @@ pipeline {
     stages{
         stage('SCM Checkout'){
             steps{
-                git 'https://github.com/saronavee/new-web-app.git'
+                git branch:'dev' credentialsId: 'santr_github', url: 'https://github.com/saronavee/new-web-app.git'
             }
         }
         stage('maven build'){
