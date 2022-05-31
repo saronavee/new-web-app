@@ -34,7 +34,7 @@ pipeline {
                             sudo docker ps -f name=${myImageName} -q | xargs --no-run-if-empty sudo docker container stop
                             sudo docker container ls -a -fname=${myImageName} -q | xargs -r sudo docker container rm
                             sudo docker system prune -f -a
-                            sudo docker run -d -p 8082:8080 --name ${myImageName}_${IMAGE_VER_TAG} ${myDockerhub}/${myImageName}:${IMAGE_VER_TAG}
+                            sudo docker run -d -p 8083:8080 --name ${myImageName}_${IMAGE_VER_TAG} ${myDockerhub}/${myImageName}:${IMAGE_VER_TAG}
                             '''
                     }
                 }
