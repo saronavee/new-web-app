@@ -6,7 +6,7 @@ pipeline {
     }
     environment {
         IMAGE_VER_TAG ="${env.BUILD_NUMBER}"
-        myImageName = "demotrain2022"
+        myImageName = "feature"
         myDockerhub    = "sarwantr"
     }
     parameters {
