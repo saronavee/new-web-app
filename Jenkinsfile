@@ -10,7 +10,7 @@ pipeline {
         myDockerhub    = "sarwantr"
     }
     parameters {
-    gitParameter branchFilter: 'origin/(.*)', defaultValue: 'dev', name: 'BRANCH', type: 'PT_BRANCH'
+    gitParameter branchFilter: 'origin/(.*)', defaultValue: 'feature', name: 'BRANCH', type: 'PT_BRANCH'
     }
     stages{
         stage('SCM Checkout'){
