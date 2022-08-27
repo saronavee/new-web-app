@@ -1,9 +1,9 @@
 pipeline {
-    agent {
-        node {
-            label 'Built-In Node'
-        }
-    }
+    agent any //{
+      //  node {
+      //      label 'Built-In Node'
+     //   }
+ //   }
     environment {
         IMAGE_VER_TAG ="${env.BUILD_NUMBER}"
         myImageName = "demotrain2022"
