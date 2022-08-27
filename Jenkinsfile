@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'demo2022'
+            label 'Built-In Node'
         }
     }
     environment {
